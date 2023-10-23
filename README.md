@@ -119,18 +119,3 @@ def display_distances():
 
 distance_button.clicked.connect(display_distances)
 
-----------------------
-Removing IP Address:
----------------------
-
-
-def remove_ip():
-    ip_to_remove = remove_ip_input.text()
-    if ip_to_remove:
-        try:
-            G.remove_node(ip_to_remove)
-            remove_ip_input.clear()
-        except nx.NetworkXError:
-            print(f"IP address {ip_to_remove} not found in the graph.")
-
-remove_button.clicked.connect(remove_ip)
