@@ -122,8 +122,8 @@ distance_button.clicked.connect(display_distances)
 ----------------------
 Removing IP Address:
 ---------------------
-language-python
- Copy code
+
+
 def remove_ip():
     ip_to_remove = remove_ip_input.text()
     if ip_to_remove:
